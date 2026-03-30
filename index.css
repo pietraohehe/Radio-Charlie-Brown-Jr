@@ -1,0 +1,214 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.429);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(50px);
+    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), black);
+}
+
+#player{
+    position: absolute;
+    opacity: 0%;
+}
+
+.imgfundo{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    background-color: rgba(27, 27, 27, 0.088);
+    border: 1px solid rgba(128, 128, 128, 0);
+    border-radius: 20px;
+    backdrop-filter: blur(0.1px);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.208);
+}
+
+.nameradio {
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.txtall {
+    color: white;
+}
+
+
+#namemusic{
+    font-style: normal;
+    font-size: 25px;
+}
+
+#autormusic {
+    font-style: normal;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.83);
+}
+
+.imgmusic {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotomusic{
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(7, 7, 7, 0.444);
+}
+
+
+.data {
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.divprogressbar{
+    background-color: transparent;
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progressbar{
+    background-color: rgba(128, 128, 128, 0.293);
+    width: 270px;
+    height: 4px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress{
+    background-color: rgb(255, 255, 255);
+    width: 270px;
+    height: 4px;
+    border-radius: 50px;
+}
+
+.contentTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.timemusic{
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.721);
+    font-size: 12px;
+}
+
+
+.line {
+    position: relative;
+    width: 250px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.buttons {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt {
+    color:rgb(255, 255, 255);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#play {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 25px;
+    transition: 0.6s;
+}   
+
+#play:hover{
+    font-size: 30px;
+    transition: 0.6s;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.444);
+}
+#next{
+    transition: 0.6s;
+}
+#next:hover{
+    opacity: 80%;
+    font-size: 27px;
+    transition: 0.6s;
+}
+#back{
+    transition: 0.6s;    
+}
+#back:hover{
+    opacity: 80%;
+    font-size: 27px;
+    transition: 0.6s;
+}
+
+
+
+.player{
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
