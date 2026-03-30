@@ -9,11 +9,12 @@
 </head>
 <body>
     <main>
-        <img class="imgfundo" src="imgmusic.jpg" alt="imgmusic">
-        <div class="background">
+        <div class="fundo">
+            <div class="background">
             
-            <div><audio id="player" controls><source src="Zoio de Lula.mp3" type="audio/mpeg"></audio></div>
-            <div class="content">
+                <div class="content">
+
+                <audio id="player" src=""></audio>
 
                 <!-- Seção do texto da rádio -->
                 <div class="nameradio">
@@ -22,13 +23,13 @@
 
                 <!-- Seção da Imagem -->
                 <div class="imgmusic">
-                    <img class="fotomusic" id="fotomusic" src="imgmusic.jpg" alt="imgmusic" width="270" height="270">
+                    <img id="fotomusic" width="270" height="270">
                 </div>
  
                 <!-- Seção do nome -->
                 <div class="data">
-                    <h3 class="txtall" id="namemusic">Zóio de Zula</h3>
-                    <h4 class="txtall" id="autormusic">Charlie Brawn Jr.</h4>
+                    <h3  id="namemusic"></h3>
+                    <h4 id="autormusic"></h4>
                 </div>
 
                 <!-- Seção da barra de progresso da música -->
@@ -42,8 +43,8 @@
 
                 <div class="contentTime">
                     <div class="timemusic">
-                        <span class="timeinicial">00:00</span>
-                        <span class="timefinal">00:00</span>
+                        <span class="timeinicial">0:00</span>
+                        <span class="timefinal">0:00</span>
                     </div>
                     
                 </div>
@@ -51,13 +52,14 @@
 
                 <!-- Seção dos botões de interação -->
                 <div class="buttons">
-                    <button class="bt" id="back"><i class="material-symbols-outlined">fast_rewind</i></button>
+                    <button class="bt" id="back" ><i class="material-symbols-outlined">fast_rewind</i></button>
                     <button class="bt" id="play"><i class="material-symbols-outlined">play_arrow</i></button>
-                    <button class="bt" id="next"><i class="material-symbols-outlined">fast_forward</i></button>
+                    <button class="bt" id="next" ><i class="material-symbols-outlined">fast_forward</i></button>
                 </div>
 
+                </div>
             </div>
-        </div>
+       </div> 
     </main>
     <script type="module" src="./script.js"></script>
 </body>
